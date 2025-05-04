@@ -1,4 +1,4 @@
-const siteMetadata: any = {
+export const siteMetadata: any = {
 	title: "Casey Key",
 	description:
 		"Casey Key is a software engineer in California with a focus on education, finance, and security with expertise in cloud-native architecture and full-stack development.",

@@ -1,13 +1,11 @@
 ---
 import Layout from "../components/Layout.astro";
-import Navigation from "../components/Navigation.astro";
 import Introduction from "../components/Introduction.astro";
 import Skills from "../components/Skills.astro";
 // import Services from '../components/Services.astro';
 // import HireMe from '../components/Hire.astro';
 import Footer from "../components/Footer.astro";
 import SEO from "../components/SEO.astro";
-import PageInit from "../components/PageInit.astro";
 
 const siteMetadata: any = {
 	title: "Casey Key",
@@ -20,14 +18,12 @@ const siteMetadata: any = {
 };
 ---
 
-<PageInit client:load />
 <Layout>
 	<SEO
 		title={siteMetadata.title}
 		description={siteMetadata.description}
 		pathname="/"
 	/>
-	<Navigation />
 	<Introduction client:load />
 	<Skills />
 	<!-- <Services /> -->
